@@ -49,7 +49,7 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nextgen-survey';
+const MONGODB_URI = process.env.MONGO_URI;
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
